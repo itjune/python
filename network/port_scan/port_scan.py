@@ -28,9 +28,11 @@ if __name__ == '__main__':
     ip = input('Enter hostname/ip: ')
     if not ip:
         print('Please enter ip or hostname!')
+        sys.exit(0)
     ports = input('Enter port range (ex. 80, 137-139): ')
     if not ports:
         print('Please enter port range!')
+        sys.exit(0)
     timeout = input('Enter timeout: ')
     if not timeout:
         timeout = 5
